@@ -1,0 +1,23 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-contactform-dev-193109-authRole",
+      "UnauthRoleArn": "arn:aws:iam::572162163690:role/amplify-contactform-dev-193109-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::572162163690:role/amplify-contactform-dev-193109-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-contactform-dev-193109-deployment",
+      "UnauthRoleName": "amplify-contactform-dev-193109-unauthRole",
+      "StackName": "amplify-contactform-dev-193109",
+      "StackId": "arn:aws:cloudformation:us-east-1:572162163690:stack/amplify-contactform-dev-193109/a8bbe040-0398-11ec-90ca-0a67bad5e0c7",
+      "AmplifyAppId": "d2lnr8dhtn2u8m"
+    },
+    "categories": {
+      "function": {
+        "formfunction": {
+          "deploymentBucketName": "amplify-contactform-dev-193109-deployment",
+          "s3Key": "amplify-builds/formfunction-4b4d73794d6656505056-build.zip"
+        }
+      }
+    }
+  }
+}

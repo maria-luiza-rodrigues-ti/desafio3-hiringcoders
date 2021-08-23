@@ -1,0 +1,16 @@
+container{
+    border: 1px solid #fff
+}
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items:center;
+    border: 2px solid #fff;
+    border-radius: 15px;
+    color: #fff;
+}
+
+.LeadForm {
+    text-align: center;
+  }

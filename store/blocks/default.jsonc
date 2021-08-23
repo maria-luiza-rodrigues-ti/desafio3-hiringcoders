@@ -22,7 +22,7 @@
     }
   },
 
-  "product-summary.shelf": {
+  "product-summary.shelf#default": {
     "children": [
       "product-summary-add-to-list-button",
       "product-summary-name",

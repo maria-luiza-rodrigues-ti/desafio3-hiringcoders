@@ -1,0 +1,85 @@
+{
+  "store.home": {
+    "children": ["modal-header", "modal-content"],
+    "blocks": [
+      "tab-layout#home",
+      "slider-layout#banners",
+      "search-result-layout.customQuery#home",
+      "flex-layout.row#shelf"
+    ]
+  },
+  "slider-layout#banners": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "autoplay": {
+        "timeout": 7000,
+        "stopOnHover": true
+      },
+      "infinite": true,
+      "showNavigationArrows": "desktopOnly",
+      "blockClass": "carousel"
+    },
+    "children": ["image#banner1", "image#banner2"]
+  },
+  "image#banner1": {
+    "props": {
+      "src": "assets/banner1.png",
+      "maxWidth": "912px",
+      "maxHeight": "270px"
+    }
+  },
+  "image#banner2": {
+    "props": {
+      "src": "assets/banner2.png",
+      "alt": "Grandes Guerreiros",
+      "maxWidth": "912px"
+    }
+  },
+  "search-result-layout.customQuery#home": {
+    "props": {
+      "querySchema": {
+        "orderByField": "OrderByReleaseDateDESC",
+        "hideUnavailableItems": true,
+        "maxItemsPerPage": 8,
+        "mapField": "ft",
+        "skusFilter": "ALL_AVAILABLE"
+      }
+    },
+    "blocks": [
+      "search-result-layout.desktop",
+      "search-result-layout.mobile",
+      "search-not-found-layout"
+    ]
+  },
+  "flex-layout.row#shelf": {
+    "children": ["list-context.product-list#demo1"]
+  },
+  "list-context.product-list#demo1": {
+    "blocks": ["product-summary.shelf#tab-product"],
+    "props": {
+      "orderBy": "OrderByTopSaleDESC"
+    }
+  },
+  "modal-layout": {
+    "children": ["modal-header", "modal-content"]
+  },
+  "modal-header": {
+    "children": ["rich-text#modalheader"]
+  },
+  "modal-content": {
+    "children": ["lead-form"]
+  },
+  "rich-text#modalheader": {
+    "props": {
+      "text": "## Saiba mais sobre os produtos",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "textColor": "success",
+      "blockClass": "modalHeader"
+    }
+  }
+}

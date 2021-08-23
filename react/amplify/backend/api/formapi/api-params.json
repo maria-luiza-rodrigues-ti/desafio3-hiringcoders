@@ -1,0 +1,35 @@
+{
+  "paths": [
+    {
+      "name": "/cadastro",
+      "lambdaFunction": "formfunction",
+      "privacy": {
+        "open": true
+      },
+      "policyResourceName": "/cadastro"
+    }
+  ],
+  "resourceName": "formapi",
+  "apiName": "formapi",
+  "functionArns": [
+    {
+      "lambdaFunction": "formfunction"
+    }
+  ],
+  "privacy": {
+    "auth": 0,
+    "unauth": 0,
+    "authRoleName": "amplify-contactform-dev-193109-authRole",
+    "unAuthRoleName": "amplify-contactform-dev-193109-unauthRole"
+  },
+  "dependsOn": [
+    {
+      "category": "function",
+      "resourceName": "formfunction",
+      "attributes": [
+        "Name",
+        "Arn"
+      ]
+    }
+  ]
+}

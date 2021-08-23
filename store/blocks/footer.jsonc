@@ -1,26 +1,45 @@
 {
-  "footer": {
-    "blocks": ["footer-layout.desktop", "footer-layout.mobile"]
-  },
-  "footer-layout.desktop": { 
-    "children": [
-      "flex-layout.row#footer"
-    ]
-  },
-  "footer-layout.mobile": { 
-    "children": [
-      "flex-layout.row#footer"
-    ]
-  },
-  "flex-layout.row#footer": { 
-    "children": [
-      "image"
-    ]
-  },
-  "image": {
-    "props": {
-      "width": 100,
-      "src": "https://brand.vtex.com/static/media/VTEX_pink_RGB.751a9fb5.svg"
+    "footer": {
+      "blocks": ["footer-layout.desktop", "footer-layout.mobile"]
+    },
+    "footer-layout.desktop": {
+      "children": [
+        "sticky-layout#footer-desktop"
+      ]
+    },
+    "footer-layout.mobile": {
+      "children": [
+        "flex-layout.row#footer-mobile"
+      ]
+    },
+    "sticky-layout#footer-desktop": {
+      "blocks": [],
+      "children": [
+        "login",
+        "link#suport"
+      ]
+    },
+    "flex-layout.row#footer-mobile": {
+      "blocks": [],
+      "children": [
+        "login",
+        "link#suport"
+      ]
+    },
+    "login": {
+        "props": {
+          "emailAndPasswordTitle": "LOG-IN",
+          "accessCodeTitle": "Acess Code LOG-IN",
+          "emailPlaceholder": "e-mail",
+          "passwordPlaceholder": "password",
+          "showPasswordVerificationIntoTooltip": true
+        }
+      },
+    "link#suport": {
+      "props": {
+        "href": "https://api.whatsapp.com/send?phone=5561982616081&text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20do%20servi%C3%A7o.",
+        "label": "Suport",
+        "displayMode": "button"
+      }
     }
   }
-}
